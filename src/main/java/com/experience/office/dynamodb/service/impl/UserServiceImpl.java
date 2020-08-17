@@ -6,19 +6,12 @@ import com.experience.office.dynamodb.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository repository;
 
-
-    @Override
-    public List<User> findAll() {
-        return null;
-    }
 
     @Override
     public User findUserById(String id) {
@@ -31,8 +24,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void deleteUser(User user) {
-        repository.delete(user);
+    public void deleteUser(String userId) {
+        repository.deleteById(userId);
     }
 
     @Override

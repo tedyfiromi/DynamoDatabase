@@ -8,7 +8,7 @@ public interface UserService {
 
     User findUserById(String id);
     User saveUser(User user);
-    void deleteUser(User user);
+    void deleteUser(String userId);
     User updateUser(User user);
-    List<User> findAll();
+
 }

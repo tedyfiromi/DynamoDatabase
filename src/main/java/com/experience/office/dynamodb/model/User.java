@@ -9,9 +9,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
-import java.time.LocalDate;
-import java.util.Date;
-
 @Data
 @AllArgsConstructor
 @Builder
@@ -25,6 +22,7 @@ public class User {
     @DynamoDBAttribute
     private String name;
 
-    public User(){}
+    public User() {
+    }
 
 }
