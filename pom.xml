@@ -30,10 +30,13 @@
     </dependencyManagement>
     <dependencies>
 
+        <!-- SpringWeb -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!-- DynamoDb -->
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-dynamodb</artifactId>
